@@ -29,38 +29,140 @@ public class ParaViagemTela extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel3 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        bgAzulCiano = new javax.swing.JPanel();
+        lbPreparando = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        tfNomeClienteAzul = new javax.swing.JTextField();
+        tfIdentificadorAzul = new javax.swing.JTextField();
+        lbIconPreparando = new javax.swing.JLabel();
+        bgVerdeClaro = new javax.swing.JPanel();
+        lbPronto = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        tfNomeClienteVerde = new javax.swing.JTextField();
+        tfIdentificadorVerde = new javax.swing.JTextField();
+        lbIconePronto = new javax.swing.JLabel();
 
         jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(394, 476));
+        setPreferredSize(new java.awt.Dimension(410, 476));
 
-        jPanel1.setBackground(new java.awt.Color(42, 179, 219));
+        bgAzulCiano.setBackground(new java.awt.Color(42, 179, 219));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 196, Short.MAX_VALUE)
+        lbPreparando.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lbPreparando.setText("Preparando");
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel5.setText("Nome Cliente");
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setText("Identificador");
+
+        tfIdentificadorAzul.setFont(new java.awt.Font("Segoe UI", 0, 55)); // NOI18N
+        tfIdentificadorAzul.setText("*****");
+
+        lbIconPreparando.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/br/food/totem/Novo Projeto.png"))); // NOI18N
+        lbIconPreparando.setToolTipText("");
+
+        javax.swing.GroupLayout bgAzulCianoLayout = new javax.swing.GroupLayout(bgAzulCiano);
+        bgAzulCiano.setLayout(bgAzulCianoLayout);
+        bgAzulCianoLayout.setHorizontalGroup(
+            bgAzulCianoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bgAzulCianoLayout.createSequentialGroup()
+                .addGroup(bgAzulCianoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(tfIdentificadorAzul, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(bgAzulCianoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(bgAzulCianoLayout.createSequentialGroup()
+                            .addGap(34, 34, 34)
+                            .addGroup(bgAzulCianoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                                .addComponent(jLabel5)
+                                .addComponent(jLabel1)
+                                .addComponent(lbPreparando)
+                                .addComponent(lbIconPreparando)))
+                        .addGroup(bgAzulCianoLayout.createSequentialGroup()
+                            .addGap(19, 19, 19)
+                            .addComponent(tfNomeClienteAzul, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        bgAzulCianoLayout.setVerticalGroup(
+            bgAzulCianoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bgAzulCianoLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(lbPreparando)
+                .addGap(33, 33, 33)
+                .addComponent(lbIconPreparando)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfNomeClienteAzul, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfIdentificadorAzul, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 255, 114));
+        bgVerdeClaro.setBackground(new java.awt.Color(0, 255, 114));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 194, Short.MAX_VALUE)
+        lbPronto.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lbPronto.setText("Pronto");
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setText("Nome Cliente");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setText("Identificador");
+
+        tfIdentificadorVerde.setFont(new java.awt.Font("Segoe UI", 0, 55)); // NOI18N
+        tfIdentificadorVerde.setText("*****");
+        tfIdentificadorVerde.addActionListener(this::tfIdentificadorVerdeActionPerformed);
+
+        lbIconePronto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/br/food/totem/comida pronta.png"))); // NOI18N
+
+        javax.swing.GroupLayout bgVerdeClaroLayout = new javax.swing.GroupLayout(bgVerdeClaro);
+        bgVerdeClaro.setLayout(bgVerdeClaroLayout);
+        bgVerdeClaroLayout.setHorizontalGroup(
+            bgVerdeClaroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.CENTER, bgVerdeClaroLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(39, 39, 39))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgVerdeClaroLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(bgVerdeClaroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(tfIdentificadorVerde)
+                    .addComponent(tfNomeClienteVerde))
+                .addGap(18, 18, 18))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgVerdeClaroLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(bgVerdeClaroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgVerdeClaroLayout.createSequentialGroup()
+                        .addGroup(bgVerdeClaroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbPronto)
+                            .addComponent(lbIconePronto))
+                        .addGap(55, 55, 55))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgVerdeClaroLayout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(46, 46, 46))))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 459, Short.MAX_VALUE)
+        bgVerdeClaroLayout.setVerticalGroup(
+            bgVerdeClaroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bgVerdeClaroLayout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(lbPronto)
+                .addGap(37, 37, 37)
+                .addComponent(lbIconePronto)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfNomeClienteVerde, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfIdentificadorVerde, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -68,18 +170,26 @@ public class ParaViagemTela extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bgAzulCiano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(bgVerdeClaro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(bgVerdeClaro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bgAzulCiano, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tfIdentificadorVerdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfIdentificadorVerdeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfIdentificadorVerdeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -87,8 +197,20 @@ public class ParaViagemTela extends javax.swing.JFrame {
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel bgAzulCiano;
+    private javax.swing.JPanel bgVerdeClaro;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel lbIconPreparando;
+    private javax.swing.JLabel lbIconePronto;
+    private javax.swing.JLabel lbPreparando;
+    private javax.swing.JLabel lbPronto;
+    private javax.swing.JTextField tfIdentificadorAzul;
+    private javax.swing.JTextField tfIdentificadorVerde;
+    private javax.swing.JTextField tfNomeClienteAzul;
+    private javax.swing.JTextField tfNomeClienteVerde;
     // End of variables declaration//GEN-END:variables
 }
