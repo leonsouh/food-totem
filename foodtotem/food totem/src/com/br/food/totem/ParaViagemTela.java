@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package com.br.food.totem;
 
-/**
- *
- * @author leons
- */
 public class ParaViagemTela extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ParaViagemTela.class.getName());
@@ -47,7 +40,6 @@ public class ParaViagemTela extends javax.swing.JFrame {
         jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(410, 476));
 
         bgAzulCiano.setBackground(new java.awt.Color(42, 179, 219));
 
@@ -60,8 +52,15 @@ public class ParaViagemTela extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("Identificador");
 
-        tfIdentificadorAzul.setFont(new java.awt.Font("Segoe UI", 0, 55)); // NOI18N
+        tfNomeClienteAzul.setFont(new java.awt.Font("Agency FB", 0, 48)); // NOI18N
+        tfNomeClienteAzul.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        tfIdentificadorAzul.setFont(new java.awt.Font("Agency FB", 0, 48)); // NOI18N
+        tfIdentificadorAzul.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         tfIdentificadorAzul.setText("*****");
+        tfIdentificadorAzul.setAlignmentX(1.0F);
+        tfIdentificadorAzul.setAlignmentY(1.0F);
+        tfIdentificadorAzul.addActionListener(this::tfIdentificadorAzulActionPerformed);
 
         lbIconPreparando.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/br/food/totem/Novo Projeto.png"))); // NOI18N
         lbIconPreparando.setToolTipText("");
@@ -115,7 +114,11 @@ public class ParaViagemTela extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("Identificador");
 
-        tfIdentificadorVerde.setFont(new java.awt.Font("Segoe UI", 0, 55)); // NOI18N
+        tfNomeClienteVerde.setFont(new java.awt.Font("Agency FB", 0, 48)); // NOI18N
+        tfNomeClienteVerde.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        tfIdentificadorVerde.setFont(new java.awt.Font("Agency FB", 0, 48)); // NOI18N
+        tfIdentificadorVerde.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         tfIdentificadorVerde.setText("*****");
         tfIdentificadorVerde.addActionListener(this::tfIdentificadorVerdeActionPerformed);
 
@@ -190,6 +193,10 @@ public class ParaViagemTela extends javax.swing.JFrame {
     private void tfIdentificadorVerdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfIdentificadorVerdeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfIdentificadorVerdeActionPerformed
+
+    private void tfIdentificadorAzulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfIdentificadorAzulActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfIdentificadorAzulActionPerformed
 
     /**
      * @param args the command line arguments
